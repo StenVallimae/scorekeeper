@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Score_Keeper</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+
+  </head>
+  <body>
+    <section class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <div class="card column is-one-third is-offset-one-third">
+            <header class="card-header">
+              <h1 class="card-header-title is-size-two title is-one">Score Keeper</h1>
+            </header>
+            <div class="card-content">
+              <div class="content">
+                <figure class="image">
+                  <img
+                    src="https://k9f7a9j9.rocketcdn.me/wp-content/uploads/2021/08/lisa-keffer-i0kB5B9J8Ds-unsplash.jpg"
+                  />
+                </figure>
+                <h2 class="is-size-one">
+                  <span id="ShowPlayerOne">0</span> to
+                  <span id="ShowPlayerTwo">0</span>
+                </h2>
+                <p class="subtitle">Use the buttons below to keep score!</p>
+              </div>
+              <label for="winScores" class="label is-large is-inline">Playing to: </label>  
+              <div class="select is-rounded">
+                <select name="winScores" id="winScores">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5" selected>5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <footer class="card-footer">
+                <button class="is-primary-button card-footer-item button is-success" id="pOne">
+                  Player One Scores
+                </button>
+                <button class="is-primary-button card-footer-item button is-danger" id="reset">Reset</button>
+      
+                <button class="is-primary-button card-footer-item button is-info" id="pTwo">
+                  Player Two Scores
+                </button>
+              </footer>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
